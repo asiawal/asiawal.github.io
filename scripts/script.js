@@ -184,8 +184,9 @@ if (document.getElementById("summaryPage")) {
 
   $summaryList.textContent = selectedCar.name + "\r\n";
   $summaryList.textContent += selectedCar.price + " zł" + "\r\n";
-  $summaryList.textContent += "Dodatkowe akcesoria: " + "\r\n";
+  $summaryList.textContent += "Data odbioru:" + "\r\n";
   $summaryList.textContent += date + "\r\n";
+  $summaryList.textContent += "Dodatkowe akcesoria: " + "\r\n";
 
   accesories.forEach((accessory) => {
     if (accessory.picked) {
