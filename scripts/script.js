@@ -170,29 +170,33 @@ if (document.getElementById("formPage")) {
 
 if (document.getElementById("summaryPage")) {
   const $pickedCarImg = document.getElementById("pickedCarImg");
-  const $summaryList = document.getElementById("summaryList");
+  const $summaryCar = document.getElementById("summaryCar");
+  const $summaryAcc = document.getElementById("summaryAcc");
+  const $summaryPrice = document.getElementById("summaryPrice");
+  const $summaryDate = document.getElementById("summaryDate");
   const $mainPageButton = document.getElementById("returnToList");
 
   const selectedCar = JSON.parse(localStorage.getItem("selectedCar"));
+  const total = JSON.parse(localStorage.getItem("total"));
   const accesories = JSON.parse(localStorage.getItem("accesories"));
   const src = JSON.parse(localStorage.getItem("carImgURL"));
   const date = JSON.parse(localStorage.getItem("date"));
 
   $pickedCarImg.src = src;
 
-  $summaryList.setAttribute("style", "white-space: pre-line");
+  $summaryAcc.setAttribute("style", "white-space: pre-line");
 
-  $summaryList.textContent = selectedCar.name + "\r\n";
-  $summaryList.textContent += selectedCar.price + " zł" + "\r\n";
-  $summaryList.textContent += "Data odbioru:" + "\r\n";
-  $summaryList.textContent += date + "\r\n";
-  $summaryList.textContent += "Dodatkowe akcesoria: " + "\r\n";
+  $summaryCar.textContent = selectedCar.name;
+  $summaryPrice.textContent = total + " zł";
+  $summaryDate.textContent = date;
 
   accesories.forEach((accessory) => {
     if (accessory.picked) {
-      $summaryList.textContent += accessory.name + "\r\n";
+      $summaryAcc.textContent +=
+        accessory.name + " (" + accessory.price + " zł)" + "\r\n";
     }
   });
+
   $mainPageButton.addEventListener("click", () => {
     window.location.href = "index.html";
   });

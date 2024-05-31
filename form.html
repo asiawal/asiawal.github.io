@@ -19,12 +19,12 @@
   <body>
     <div id="formPage">
       <p>
-        <button id="backToList" class="btn form__button">Powrót do wyboru</button>
+        <button id="backToList" class="btn form_button">Powrót do wyboru</button>
       </p>
       
       <form id="customerForm" autocomplete="off">
         <fieldset class="form_fieldset">
-          <legend class="form__legend">Wybierz płatność</legend>
+          <legend class="form_legend">Wybierz płatność</legend>
           <ul>
             <li class="form_li">
               <label>
@@ -45,27 +45,27 @@
         </fieldset>
 
         <fieldset class="form_fieldset">
-          <legend class="form__legend">Dane osobowe</legend>
+          <legend class="form_legend">Dane osobowe</legend>
           <p>
             <label>
-              <span class="form__labelText"> Imię i nazwisko: </span>
-              <input id="fullName" class="form__field" type="text" pattern="^(\w\w+)\s(\w+)$" oninvalid="this.setCustomValidity('Uzupełnij w formacie Imię Nazwisko')" oninput="this.setCustomValidity('')" required />
+              <span class="form_labelText"> Imię i nazwisko: </span>
+              <input id="fullName" class="form_field" type="text" pattern="^(\w\w+)\s(\w+)$" oninvalid="this.setCustomValidity('Uzupełnij w formacie Imię Nazwisko')" oninput="this.setCustomValidity('')" required />
               <p id="nameValidationMessage"></p>
             </label>
           </p>
         </fieldset>
 
         <fieldset class="form_fieldset">
-          <legend class="form__legend">Data odbioru</legend>
+          <legend class="form_legend">Data odbioru</legend>
           <p>
-            <span class="form__labelText"> Data odbioru: </span
-            ><input id="date" class="form__field" type="date" required/>
+            <span class="form_labelText"> Data odbioru: </span
+            ><input id="date" class="form_field" type="date" required/>
             <p id="dateValidationMessage"></p>
           </p>
         </fieldset>
 
         <fieldset class="form_fieldset">
-          <legend class="form__legend">Wybierz akcesoria</legend>
+          <legend class="form_legend">Wybierz akcesoria</legend>
           <ul>
             <li class="form_li">
               <label>
@@ -115,10 +115,10 @@
         </fieldset>
 
         <fieldset class="form_fieldset">
-          <legend class="form__legend">Do zapłaty</legend>
+          <legend class="form_legend">Do zapłaty</legend>
           <p class="form_price"><span id="total"></span> PLN</p>
         </fieldset>
-        <input type="submit" value="Zakup" class="form__button">
+        <input type="submit" value="Zakup" class="form_button">
       </form>
     </div>
   </body>

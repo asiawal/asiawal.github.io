@@ -17,3 +17,47 @@
 .btn:active {
     background-color: hsl(120, 61%, 45%);
 }
+
+legend {
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px;
+    background-color: #eee
+}
+
+#summaryCar {
+    font-weight: bold;
+}
+
+#summaryPrice {
+    font-weight: bold;
+}
+
+#summaryDate {
+    font-weight: bold;
+}
+
+#summaryAcc {
+    font-weight: bold;
+
+}
+
+p {
+    margin: 10px;
+    padding: 3px;
+}
+
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}

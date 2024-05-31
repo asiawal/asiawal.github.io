@@ -17,13 +17,20 @@
   </head>
 
   <body>
-    <img class="picture" id="pickedCarImg" />
-
-    <div id="summaryPage">
-      <h2>Gratulujemy zakupu!</h2>
-      <p>Podsumowanie:</p>
-      <p id="summaryList"></p>
+    <div>
+      <img class="picture" id="pickedCarImg" alt="Wybrany samochód" />
     </div>
+
+    <fieldset id="summaryPage">
+      <legend>Gratulujemy zakupu!</legend>
+
+      <p>Zamówiony samochód: <span id="summaryCar"></span></p>
+      <p>Cena całkowita: <span id="summaryPrice"></span></p>
+      <p>Data odbioru: <span id="summaryDate"></span></p>
+      <p>Zamówione akcesoria:</p>
+      <p><span id="summaryAcc"></span></p>
+    </fieldset>
+
     <button id="returnToList" class="btn">Wróć na stronę główną</button>
   </body>
 </html>

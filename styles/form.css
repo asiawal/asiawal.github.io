@@ -13,7 +13,7 @@
     background-color: #eee
 }
 
-.form__labelText {
+.form_labelText {
     max-width: 150px;
     width: 100%;
     display: inline-block;
@@ -21,7 +21,7 @@
     margin-left: 10px;
 }
 
-.form__field {
+.form_field {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -47,7 +47,7 @@ li {
 
 }
 
-.form__button {
+.form_button {
     max-width: 70%;
     border: none;
     background-color: hsl(120, 61%, 34%);
@@ -59,15 +59,15 @@ li {
     margin-right: auto;
 }
 
-.form__button:hover {
+.form_button:hover {
     background-color: hsl(120, 61%, 40%);
 }
 
-.form__button:active {
+.form_button:active {
     background-color: hsl(120, 61%, 45%);
 }
 
-.form__legend {
+.form_legend {
     background-color: darkorange;
     color: white;
     padding: 10px;
